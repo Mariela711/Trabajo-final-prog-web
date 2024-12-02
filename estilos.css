@@ -1,0 +1,48 @@
+
+.potta-one-regular {
+    font-family: "Potta One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.contenedor{
+    display:grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-areas:"header header header"
+                        "aside seccion1 seccion1"
+                        "aside seccion2 seccion3"
+                        "footer footer footer";
+}
+section , aside, footer, header{
+    border: 2px solid black;
+}
+.contenedor secundaria{
+    display: flex;
+}
+.item_header{
+        grid-area: header;
+}
+.item_aside{
+     grid-area: aside;
+}
+.item_seccion1{
+    grid-area: seccion1;
+} 
+.item_seccion2{
+    grid-area: seccion2;
+        }
+.item_seccion3{
+     grid-area: seccion3;
+}
+.item_footer{
+    grid-area: footer;
+}
+nav{
+    background: linear-gradient(brown, yellow);
+}
+header{
+    background-color: bisque;
+}
+button{
+    margin: 20px;
+}
